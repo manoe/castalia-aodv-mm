@@ -14,3 +14,6 @@ on the source code provided by the following contributor
  * Contact:  Paolo Roberto Grassi <grassi@elet.polimi.it>
  * Project:  Multi Sensor and Actuator Networks
  * Owner:    Politecnico di Milano (MI) - ITALY
+
+Remark:
+Original source code: https://sourceforge.net/projects/aodvcastalia/
