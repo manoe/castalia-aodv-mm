@@ -20,7 +20,7 @@
 #ifndef AODVRREQTABLE_H_
 #define AODVRREQTABLE_H_
 
-#include "VirtualRouting.h"
+#include "node/communication/routing/VirtualRouting.h"
 #include "AodvTestRoutingControlPacket_m.h"
 #include "AodvTestRoutingDataPacket_m.h"
 
@@ -29,7 +29,7 @@
 #include <queue>
 #include <math.h>
 #include <limits>
-#include "CastaliaModule.h"
+#include "helpStructures/CastaliaModule.h"
 
 
 #endif /* AODVRREQTABLE_H_ */

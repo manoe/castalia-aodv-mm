@@ -20,7 +20,7 @@
 
 cplusplus 
 {{ 
-#include "RoutingPacket_m.h"
+#include "node/communication/routing/RoutingPacket_m.h"
 }}
 
 class RoutingPacket;

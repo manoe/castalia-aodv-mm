@@ -19,9 +19,6 @@
 
 
 #include "AodvTestRouting.h"
-#include <csimulation.h>
-#include <CastaliaModule.h>
-#include <ResourceManager.h>
 using namespace std;
 Define_Module(AodvTestRouting);
 

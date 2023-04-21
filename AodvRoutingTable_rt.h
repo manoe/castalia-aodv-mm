@@ -24,7 +24,7 @@
 #include <string>
 #include <queue>
 #include <limits>
-#include "CastaliaModule.h"
+#include "helpStructures/CastaliaModule.h"
 
 
 enum RoutingFlag

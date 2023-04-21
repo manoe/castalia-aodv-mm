@@ -21,7 +21,7 @@
 #ifndef _AODVTESTROUTING_H_
 #define _AODVTESTROUTING_H_
 
-#include "VirtualRouting.h"
+#include "node/communication/routing/VirtualRouting.h"
 #include "AodvTestRoutingControlPacket_m.h"
 #include "AodvTestRoutingDataPacket_m.h"
 #include "AodvRoutingTable_rt.h"
@@ -96,7 +96,7 @@ class AodvTestRouting: public VirtualRouting
 	int rreqID;
 	AodvRoutingTable* rtable;// the routing table
 	AodvRREQTable* rreqTable;// the RREQ table
-	priority_queue <RouteTimer,vector<rreqBroadcastedTimer>,compareRreqBroadcastedTimer > rreqBroadTable;// list of rreq broadcasted
+	priority_queue <rreqBroadcastedTimer,vector<rreqBroadcastedTimer>,compareRreqBroadcastedTimer > rreqBroadTable;// list of rreq broadcasted
 
 
 	double activeRouteTimeout; //in s
