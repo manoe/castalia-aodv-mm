@@ -24,15 +24,15 @@ Define_Module(AodvTestRouting);
 
 void AodvTestRouting::startup()
 {
-	activeRouteTimeout = (double)par("activeRouteTimeout") / 1000.0;
+	activeRouteTimeout = par("activeRouteTimeout").intValue() / 1000.0;
 	allowedHelloLoss = par("allowedHelloLoss");
-	helloInterval = (double)par("helloInterval") / 1000.0;
+	helloInterval = par("helloInterval").intValue() / 1000.0;
 	localAddTTL = par("localAddTTL");
 	netDiameter = par("netDiameter");
-	frameSize = par("frameSize");
+	frameSize = par("frameSize").intValue();
 	//int activeRouteTimeoutTemp = par("activeRouteTimeout");
 	//activeRouteTimeout = (activeRouteTimeoutTemp + (frameSize * netDiameter)/2)/1000.0;
-	nodeTraversalTime = (double)par("nodeTraversalTime") / 1000.0;
+	nodeTraversalTime = par("nodeTraversalTime").intValue() / 1000.0;
 	netTraversalTime = 2*nodeTraversalTime*netDiameter;
 	pathDiscoveryTime = 2*netTraversalTime;
 	rerrRatelimit = par("rerrRatelimit");
@@ -78,8 +78,8 @@ void AodvTestRouting::startup()
 
 
 
-    latencyMax = hasPar("latencyHistogramMax") ? par("latencyHistogramMax") : 0;
-    latencyMin = hasPar("latencyHistogramMin") ? par("latencyHistogramMin") : 0;
+    latencyMax = hasPar("latencyHistogramMax") ? par("latencyHistogramMax").doubleValue() : 0;
+    latencyMin = hasPar("latencyHistogramMin") ? par("latencyHistogramMin").doubleValue() : 0;
     latencyBuckets = hasPar("latencyHistogramBuckets") ? par("latencyHistogramBuckets") : 0;
     if (latencyMax > 0 && latencyBuckets > 0)
         declareHistogram("RREQ response time, in s", latencyMin, latencyMax, latencyBuckets);
